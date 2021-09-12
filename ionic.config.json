@@ -1,0 +1,7 @@
+{
+  "name": "appIA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
