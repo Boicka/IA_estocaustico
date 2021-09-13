@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Inteligencia Artificial
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,190 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Inteligencia Artificial</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div>
+      <ion-item color="success">
+        <ion-label>
+          Mejor: {{ mejor[4] }}
+        </ion-label>
+      </ion-item>
+    </div>
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="cell-class">
+            <div>
+              Ex
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              Ey
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              Ez
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="cell-class">
+            <div>
+              {{ E[0] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ E[1] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ E[2] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="cell-class">
+            <div>
+              X1
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              X2
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              X3
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="cell-class">
+            <div>
+              {{ X[0] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ X[1] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ X[2] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="cell-class">
+            <div>
+              {{ X[3] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ X[4] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ X[5] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="cell-class">
+            <div>
+              e1
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              e2
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              e3
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="cell-class">
+            <div>
+              {{ e[0] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ e[1] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ e[2] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="cell-class">
+            <div>
+              {{ e[3] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ e[4] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+          <ion-col class="cell-class">
+            <div>
+              {{ e[5] | number : '1.2-10' }}
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div>
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col class="cell-class" size="4">
+            ||E||2
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="cell-class" size="4">
+            {{ E2[0] | number : '1.2-10' }}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="cell-class" size="4">
+            {{ E2[1] | number : '1.2-10' }}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <ion-button (click)="calcular()" shape="round">
+      Calcular
+    </ion-button>
   </div>
 </ion-content>
